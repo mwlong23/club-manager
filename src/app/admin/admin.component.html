@@ -1,29 +1,39 @@
-<h3>Add New Member to Chess Club</h3>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Member to Chess Club</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>First name:</label>
+        <br>
+        <input #newFirstName>
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <br>
+        <input #newLastName>
+      </div>
+      <div>
+        <label>Role:</label>
+        <br>
+        <input #newRole>
+      </div>
+      <div>
+        <label>Been a member for:</label>
+        <br>
+        <input #newYearsMember>
+      </div>
+      <div>
+        <label>Bio:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newFirstName.value, newLastName.value, newRole.value, newYearsMember.value, newDescription.value); newFirstName.value=''; newLastName.value=''; newRole.value=''; newYearsMember.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
 <div>
-  <div>
-    <label>First name:</label>
-    <br>
-    <input #newFirstName>
-  </div>
-  <div>
-    <label>Last Name:</label>
-    <br>
-    <input #newLastName>
-  </div>
-  <div>
-    <label>Role:</label>
-    <br>
-    <input #newRole>
-  </div>
-  <div>
-    <label>Been a member for:</label>
-    <br>
-    <input #newYearsMember>
-  </div>
-  <div>
-    <label>Bio:</label>
-    <br>
-    <textarea #newDescription></textarea>
-  </div>
-  <button (click)="submitForm(newFirstName.value, newLastName.value, newRole.value, newYearsMember.value, newDescription.value); newFirstName.value=''; newLastName.value=''; newRole.value=''; newYearsMember.value=''; newDescription.value=''">Submit</button>
+  <app-members></app-members>
 </div>
