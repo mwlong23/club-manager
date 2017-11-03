@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+#Firebase Credentials
+/src/app/api-keys.ts 
+
 # dependencies
 /node_modules
 
