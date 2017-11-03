@@ -1,0 +1,16 @@
+{ "members": [{
+    "firstName": "Steve",
+    "lastName": "Smith",
+    "role": "Co-founder",
+    "yearsMember": 12,
+    "bio": "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
+    "id": "1"
+    }, {
+      "firstName": "Vanessa",
+      "lastName": "Dawson",
+      "role": "Co-founder",
+      "yearsMember": 12,
+      "bio": "Vanessa discovered her joy for chess after her first victory against Steve.",
+      "id": "2"
+  }]
+}
