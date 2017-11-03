@@ -19,7 +19,7 @@ export class MembersComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
-  goToMemberDetail(clickedMember: Member){
-    this.router.navigate(['members', clickedMember.id]);
+  goToDetail(clickedMember){
+    this.router.navigate(['members', clickedMember.$key]);
   }
 }
