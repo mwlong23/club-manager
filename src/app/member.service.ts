@@ -10,4 +10,12 @@ export class MemberService {
     return MEMBERS;
   }
 
+  getMemberById(albumId: number){
+    for (let i = 0; i <= MEMBERS.length - 1; i++){
+      if (MEMBERS[i].id ===albumId){
+        return MEMBERS[i];
+      }
+    }
+  }
+
 }

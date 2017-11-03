@@ -11,7 +11,8 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class MemberDetailComponent implements OnInit {
-  memberId: number = null;
+  memberId: number;
+  memberToDisplay: Member;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,6 +24,7 @@ export class MemberDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.memberId = parseInt(urlParameters['id']);
     });
+    this.memberToDisplay = this.memberService.getMemberById(this.memberId)
   }
 
 }
